@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
+/****************************BASICS****************************/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    background-color: rgb(244, 244, 244);
+    font: .8em 'Raleway';
+    font-size: 1em;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+.main {
+    padding: 16em 1em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h1 {    
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+} 
+
+
+/****************************HEADER****************************/
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5em 0em;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: -webkit-fill-available;
+}
+
+header > h2{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.header-logo{
+    font-size: 2em;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.header-nav { 
+    margin-top: 1em;
+    list-style-type: none;  
+}
+
+.header-nav > li > a { 
+    color: black;
+    text-decoration: none;
+    font-weight: 800;  
+}
+
+.header-nav > li > a:hover {  
+    color: rgba(0,0,0,0.5);
+}
+
+.header-nav > li > a.active { 
+    color: rgb(189, 55, 0) !important;
+}
+
+
+/****************************FOOTER****************************/
+
+footer{
+	background: black;
+    color: white;
+    width: 100%;
+	bottom: 0em;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.footer-content > a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content > a:hover{
+    color: rgb(189, 55, 0); 
+}
+.links-social {
+    margin: 1.5em 0em;
+}
+.links-social a:hover{
+    opacity: 0.7;
+}
+
+
+/****************************LINKS****************************/
+
+.link-more {
+    text-decoration-style: dotted;    
+    color: rgb(189, 55, 0);
+    font-weight: 600;
+}
+.link-more:hover {
+    color: rgb(0, 0, 0);
+}
+
+.link-title {
+    text-decoration: none;
+    color: rgb(189, 55, 0);
+    font-weight: 600;
+}
+.link-title:hover {
+    color: rgb(0, 0, 0);
+}
+
+.link-content {
+    text-decoration: none;
+    color: rgb(189, 55, 0);
+}
+.link-content:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+.italic-font{
+    font-style: italic;
+}
+
+.bold-font{
+    font-weight: 600;
+}
+
+.boldest-font{
+    font-weight: 800;
+}
+
+
+/****************************MOBILE****************************/
+@media only screen and (min-width: 700px) {  
+    
+header {
+    width: 100%;        
+}
+
+header h2, h1, ul{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+	
+body {
+    font-size: 1em;
+}
+
+.header-nav { 
+    display: flex;
+}
+
+.header-nav > li > a { 
+    margin-right: 1.5em;
+}
+
+.main {
+    padding: 14em 1em 6em;
+    margin: 0 auto;
+    width: 70%;
+}
+ 
+.footer-content {
+    display: block;
+    padding: 1.5em;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-content > a {
+    text-decoration: none;
+    color: white;
+    padding-right: 0.5em;       
+}
+
+.footer-content > a::before {
+     content:"• ";
+}
+
+.footer-content > a:first-child::before {
+    content:none;
+}
+}
+
+
+/****************************INDEX****************************/
+.body-white {
+    background-color: white;
+}
+
+.title {    
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+} 
+
+.main-index {
+    padding-top: 12em;
+}
+
+
+.first-section{
+    height: 15em;
+    display: flex;
+    background-image: url(../img/bg-hero-home.jpg);
+    background-size:cover;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+
+
+.first-section > h2 {
+    font-size: calc(2em + 1vw); 
+    font-weight: 600;
+}
+
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+
+.third-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3.5em;
+}
+
+.third-section img {
+    width: 100%;
+}
+.third-section > h2{
+    text-align: center;
+    margin-bottom: unset;
+}
+
+.third-section * {
+    text-align: left;
+    padding-bottom: 1em;
+}
+
+
+.fourth-section {
+    background-color: rgb(242, 232, 228);
+    padding: 1.5em;
+}
+form p {
+    font-size: .7em;      
+    margin: 1em 0;
+}
+.input-form input {
+    width:100%;
+    height: 2.8em;
+    margin-bottom: 1em;
+}
+input::placeholder{
+    padding-left: 1em;        
+}
+.input-select{     
+    display:flex;  
+}
+
+button {
+    padding: 1em;
+    color:rgb(255, 255, 255);
+    background-color: rgb(189, 55, 0);
+    border: none;
+}
+
+button:hover {
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/****************************MOBILE INDEX****************************/
+@media only screen and (min-width: 700px) {  
+     
+.first-section{
+    height: 20em;
+}
+
+.first-section > div {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.first-section > div > p{ 
+    color: rgb(255, 255, 255);
+    font-size: calc(4em + 1vw);
+}    
+
+.second-section {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.second-section > p {
+    font-size: 1.7em;
+}
+
+.third-section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.third-section > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.fourth-section form{
+    padding: 0 1.5em;
+    margin: 0 auto;
+    width: 33%;
+}
+
+.fourth-section.title{
+    margin: 0 auto;
+    width: 70%;
+}
+}
+
+
+/****************************MOBILE SIMPTOMES****************************/
+.card {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    margin-bottom: 1em ;
+    border-radius: 0.5em;
+}
+
+.card h2{
+    font-weight: 600;
+}
+.card p{
+    margin: .5em 0;
+}
+
+.card img {
+    width: 100%;
+}
+
+/****************************DESKTOP SIMPTOMES****************************/
+
+@media only screen and (min-width: 700px) { 
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: 0.5em;
+    gap: 1em;
+    grid-column: 1 / 3;
+}
+
+.card h2{
+    margin: 0em 0em .5em 0em;
+    font-weight: 600;
+}
+
+.card p{
+    font-size: .8em;
+    text-align: justify;
+}
+
+.card:nth-child(2n) {
+     grid-column: 2 / 4;      
+}
+
+.link-more {
+    font-size: .8em;
+}
+ }
+
+ /****************************MOBILE VIDEOS****************************/
+ figure {
+    margin: 1em 0em;
+    text-align: center;
+    width: min-content;
+ }
+ figure > figcaption{
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    
+    text-align: center;
+ }
+ 
+ 
+/****************************DESKTOP VIDEOS****************************/
+@media only screen and (min-width: 700px) { 
+.video-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;     
+    padding: 1em;
+    border-radius: 0.5em;
+    gap: 1em;
+    width: 100%;
+}
+
+figure{
+     width: unset;
+}
+
+figure > iframe {
+    width: 100%;
+    height: 20em;
+    border: 0;
+}  
+}
+
+/****************************MOBILE COP26****************************/
+ .cop26 h2{
+    font-weight: 600;
+ }
+
+ .first-section-cop26 > h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1em;
+    font-size: inherit;
+}
+
+ol {
+    padding-left: 2em;
+}
+ol > li {
+    margin: 1em 0em;
+}
+
+ol > li:last-child {
+    margin-bottom: 2em;
+}
+
+blockquote {
+    background-color: rgb(255, 255, 255);
+    border-left: 0.2rem solid rgb(189, 55, 0);
+    padding: 1rem;
+    margin: 1em 0em;
+}
+
+
+/****************************DESKTOP COP26****************************/
+@media only screen and (min-width: 700px) { 
+    .cop26 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6em;
+        font-size: .8em;
+        text-align: justify;
+    }
+}
